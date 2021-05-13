@@ -1,0 +1,30 @@
+$main-color: #4285f4;
+$custom-color: #808080;
+
+.custom-button {
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  color: $custom-color;
+  border: 3px solid $custom-color;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $custom-color;
+    color: #fff;
+  }
+
+  &.google-sign-in {
+    border: 3px solid $main-color;
+    background-color: transparent;
+    color: $main-color;
+
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+}
